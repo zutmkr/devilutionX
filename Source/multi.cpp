@@ -594,10 +594,10 @@ static int InitLevelType(int l)
 		return DTYPE_CAVES;
 	if (l >= 13 && l <= 16)
 		return DTYPE_HELL;
-	if (l >= 21 && l <= 24)
-		return DTYPE_CATHEDRAL; // Crypt
 	if (l >= 17 && l <= 20)
-		return DTYPE_CAVES; // Hive
+		return DTYPE_NEST;
+	if (l >= 21 && l <= 24)
+		return DTYPE_CRYPT;
 
 	return DTYPE_CATHEDRAL;
 }
